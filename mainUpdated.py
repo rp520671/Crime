@@ -7,7 +7,7 @@ from sklearn.linear_model import LinearRegression
 import joblib
 from sklearn.ensemble import RandomForestRegressor
 from plotly.offline import init_notebook_mode, iplot
-import webview
+
 
 app = Flask(__name__)
 
@@ -364,5 +364,5 @@ def About():
 
 
 if __name__ == '__main__':
-    #app.run(host='0.0.0.0',port=5000, debug=True)
-	webview.start()
+    app.run(host='0.0.0.0',port=5000, debug=True)
+	

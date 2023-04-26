@@ -51,7 +51,7 @@ def women():
 	C_type = request.form.get("C_Type")			
 	state = request.form.get("state")			 
 	
-	df = pd.read_csv("C:/Users/rp960/Documents/Jupyter/Indian-Crime-Prediction-and-Visualization-Online-Platform/static/StateWiseCAWPred1990-2016.csv", header=None)
+	df = pd.read_csv("./static/StateWiseCAWPred1990-2016.csv", header=None)
 
 	data1 = df.loc[df[0]==state].values			
 	for x in data1:
@@ -128,7 +128,7 @@ def children():
 	C_type = request.form.get("C_Type")			
 	state = request.form.get("state")			
 
-	df = pd.read_csv("C:/Users/rp960/Documents/Jupyter/Indian-Crime-Prediction-and-Visualization-Online-Platform/static/Statewise Cases Reported of Crimes Committed Against Children 1994-2016.csv", header=None)
+	df = pd.read_csv("./static/Statewise Cases Reported of Crimes Committed Against Children 1994-2016.csv", header=None)
 
 	data1 = df.loc[df[0]==state].values			
 	for x in data1:
@@ -209,7 +209,7 @@ def ipc():
 	C_type = request.form.get("C_Type")			
 	state = request.form.get("state")			
 
-	df = pd.read_csv("C:/Users/rp960/Documents/Jupyter/Indian-Crime-Prediction-and-Visualization-Online-Platform/static/StateIPCPred2001_16.csv", header=None)
+	df = pd.read_csv("./static/StateIPCPred2001_16.csv", header=None)
 
 	data1 = df.loc[df[0]==state].values			
 	for x in data1:
@@ -287,7 +287,7 @@ def sll():
 	C_type = request.form.get("C_Type")			
 	state = request.form.get("state")		
 
-	df = pd.read_csv("C:/Users/rp960/Documents/Jupyter/Indian-Crime-Prediction-and-Visualization-Online-Platform/static/StateSLLPred2001_16.csv", header=None)
+	df = pd.read_csv("./static/StateSLLPred2001_16.csv", header=None)
 
 	data1 = df.loc[df[0]==state].values			
 	for x in data1:
